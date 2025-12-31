@@ -224,19 +224,22 @@ p, p1, p2 {
   #mainGrid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 1rem;
+    gap: 1.2rem;
   }
 
   .wiggly-section {
-    padding: 1rem;
-    max-height: 320px;
+    padding: 1.1rem;
+    max-height: none;
   }
 
   #galleryGrid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 0.8rem;
+    margin-top: 1rem;
+    height: auto;
     max-height: none;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: unset;
   }
 
   .placeholder-text {
@@ -251,6 +254,7 @@ p, p1, p2 {
 
   #headerSection {
     padding: 0.6rem;
+    gap: 0.4rem;
   }
 
   #headerSection h1 {
@@ -262,17 +266,18 @@ p, p1, p2 {
   }
 
   .wiggly-section {
-    padding: 0.9rem;
-    max-height: 280px;
+    padding: 1rem;
   }
 
   #galleryGrid {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.8rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
   }
 
   #galleryGrid img {
     border-radius: 10px;
+    height: 200px;
   }
 
   p, p1, p2, .update-desc {
@@ -290,6 +295,10 @@ p, p1, p2 {
   }
 
   .wiggly-section {
-    padding: 0.8rem;
+    padding: 0.9rem;
+  }
+
+  #galleryGrid img {
+    height: 180px;
   }
 }
