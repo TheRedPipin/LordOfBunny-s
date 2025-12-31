@@ -40,7 +40,7 @@ window.onload = async () => {
 
     } catch (error) {
         console.error('Error loading updates:', error);
-        container.innerHTML = `<p class="update-desc" style="opacity:0.6;">Oopsie! Bunny updates are hiding... 🐇</p>`;
+        container.innerHTML = `<p class="update-desc" style="opacity:0.6;">Oopsie! Bunny updates are hiding...</p>`;
     }
 };
 

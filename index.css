@@ -176,7 +176,6 @@ p, p1, p2 {
 #funFactsContainer    { grid-column: 2; grid-row: 2; }
 #interactiveContainer { grid-column: 3; grid-row: 2; }
 
-/* Tablet: gentle 2-column layout */
 @media (max-width: 1024px) {
   #mainGrid {
     grid-template-columns: 1fr 1fr;
@@ -197,7 +196,6 @@ p, p1, p2 {
   }
 }
 
-/* Mobile: full single-column stack with balanced spacing */
 @media (max-width: 768px) {
   body {
     padding: 0.8rem;
@@ -248,7 +246,6 @@ p, p1, p2 {
   }
 }
 
-/* Small phones: even more breathing room */
 @media (max-width: 480px) {
   body {
     padding: 0.6rem;
