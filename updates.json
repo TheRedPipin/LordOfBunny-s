@@ -1,7 +1,15 @@
 {
   "versions": [
     {
-      "number": "1.5",
+      "number": "1.8",
+      "description": "Added some super cool links!"
+    },
+    {
+      "number": "1.7",
+      "description": "Added more mobile styling and improvements!"
+    },
+    {
+      "number": "1.6",
       "description": "Wrote a flufton for the about me! wowow!"
     },
     {
