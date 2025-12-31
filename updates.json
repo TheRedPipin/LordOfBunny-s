@@ -1,0 +1,32 @@
+{
+  "versions": [
+    {
+      "number": "1.5",
+      "description": "Wrote a flufton for the about me! wowow!"
+    },
+    {
+      "number": "1.5",
+      "description": "Updated content and increased the gallery!"
+    },
+    {
+      "number": "1.4",
+      "description": "Added new layout!!! Everything fits now!!!!!"
+    },
+    {
+      "number": "1.3",
+      "description": "Each update now has its own wiggly mini-box!"
+    },
+    {
+      "number": "1.2",
+      "description": "Sorted updates newest first"
+    },
+    {
+      "number": "1.1",
+      "description": "Added silly lil wiggly lines!!!"
+    },
+    {
+      "number": "1.0",
+      "description": "Made the sites baseplate :D"
+    }
+  ]
+}
