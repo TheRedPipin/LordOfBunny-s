@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "number": "1.9",
+      "description": "Prepared the message box! Not usable yet :("
+    },
+    {
       "number": "1.8",
       "description": "Added some super cool links!"
     },
