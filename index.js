@@ -79,3 +79,4 @@ if (occaliImages.length > 0) {
 } else {
     galleryGrid.innerHTML = '<p style="opacity: 0.6; grid-column: 1 / -1;">No bunnies in the burrow yet... 🥺</p>';
 }
+
