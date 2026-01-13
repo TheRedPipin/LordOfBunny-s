@@ -70,7 +70,7 @@
 
             <section id="interactiveContainer" class="wiggly-section">
                 <p class="placeholder-text">✧ !Post Office! ✧</p>
-                <form action="https://formsubmit.co/edenmiles7@gmail.com" method="POST" target="_blank">
+                <form id="postForm" action="https://formsubmit.co/edenmiles7@gmail.com" method="POST" target="_blank">
                     <input type="text" name="_honey" style="display: none;">
                     <input type="hidden" name="_captcha" value="false">
 
@@ -83,6 +83,16 @@
                         </svg>
                     </button>
                 </form>
+                //A lil script to just reset the form data after submission
+                <script>
+                    const form = document.getElementById("postForm");
+                    form.addEventListener("submit", function(){
+                        setTimeout(function(){
+                            form.reset();
+                        }, 1000)
+                    })
+                </script>
+
             </section>
         </main>
     </div>
