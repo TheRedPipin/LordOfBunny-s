@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "number": "2.0",
+      "description": "Revamed the site!!! Itss got it's own fancy domain now!!! and the post office works whoop whoop!"
+    },
+    {
       "number": "1.9",
       "description": "Prepared the message box! Not usable yet :("
     },
