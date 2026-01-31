@@ -1,4 +1,4 @@
-window.onload = async () => {
+document.addEventListener("DOMContentLoaded", async () => {
     const container = document.getElementById("updateContainer");
     
     container.innerHTML = '';
@@ -34,7 +34,7 @@ window.onload = async () => {
             const emptyMsg = document.createElement("p");
             emptyMsg.className = "update-desc";
             emptyMsg.style.opacity = "0.6";
-            emptyMsg.innerText = "No hoppenings yet... check back soon! 🥕";
+            emptyMsg.innerText = "No hoppenings yet... check back soon!";
             container.appendChild(emptyMsg);
         }
 
@@ -42,7 +42,7 @@ window.onload = async () => {
         console.error('Error loading updates:', error);
         container.innerHTML = `<p class="update-desc" style="opacity:0.6;">Oopsie! Bunny updates are hiding...</p>`;
     }
-};
+});
 
 const galleryGrid = document.getElementById("galleryGrid");
 

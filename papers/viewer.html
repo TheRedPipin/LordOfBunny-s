@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Paper...</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="preload" as="image" href="assets/squiggleBorder.png">
+    <link rel="preload" as="image" href="assets/squiggleBorder2.png">
+    <link rel="preload" as="image" href="assets/squiggleBorder3.png">
+    <link rel="preload" as="image" href="assets/squiggleBorder4.png">
+    <style>
+        .paper-body { 
+            text-align: left; 
+            background: white; 
+            padding: 2rem; 
+            border-radius: 15px; 
+            line-height: 1.6; 
+            min-height: 60vh; 
+            margin-top: 5rem !important; 
+        }
+        
+        nav {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            width: auto !important;
+        }
+
+        .back-btn {
+            text-decoration: none; 
+            padding: 0.6rem 1.2rem; 
+            background: var(--secondary-color);
+            display: inline-block;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .reference-list { font-size: 0.9rem; border-top: 2px dashed var(--primary-color); margin-top: 2rem; padding-top: 1rem; }
+        h2 { border-bottom: 4px solid var(--secondary-color); display: inline-block; margin-top: 2rem; color: var(--accent-dark); }
+        h3 { color: var(--text-color); margin-top: 1.5rem; }
+        .paper-img { max-width: 100%; height: auto; border-radius: 8px; margin: 1rem 0; }
+        pre { background: #f4f4f4; padding: 1rem; border-radius: 8px; overflow-x: auto; }
+
+        .system-font-mode, 
+        .system-font-mode * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+            line-height: 1.7;
+            letter-spacing: normal;
+        }
+        .system-font-mode h1{
+            line-height: 1.2;
+            text-wrap-mode: wrap;
+        }
+
+        .font-toggle-btn {
+            background-color: transparent;
+            border: 2px solid var(--accent-dark);
+            color: var(--accent-dark);
+            font-family: inherit;
+            font-size: 0.9rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .font-toggle-btn:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="content-wrapper">
+
+    <nav>
+        <a href="papers-list.html" class="wiggly-style back-btn">
+            ⬅ Back to Library
+        </a>
+    </nav>
+
+    <article class="wiggly-style paper-body" style="max-width: 900px; margin-left: auto; margin-right: auto;">
+        <div id="paperContent">
+            <div style="text-align: center; padding: 3rem;">
+                <p style="font-size: 1.2rem; color: var(--accent-dark);">Digging up the archives... 🐇</p>
+            </div>
+        </div>
+    </article>
+
+    <footer id="siteFooter" style="margin-top: 2rem;">
+        <p>© 2026 Eden Miles | Paper Archive</p>
+    </footer>
+
+    <script src="../assets/js/md-renderer.js" defer></script>
+</body>
+</html>

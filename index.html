@@ -4,39 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>!!!!BUNNY!!!!</title>
-    <link rel="preload" href="index.css" as="style">
+    
+    <link rel="preload" as="image" href="assets/squiggleBorder.png">
+    <link rel="preload" as="image" href="assets/squiggleBorder2.png">
+    <link rel="preload" as="image" href="assets/squiggleBorder3.png">
+    <link rel="preload" as="image" href="assets/squiggleBorder4.png">
+    
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="assets/pop-cat-full.ico">
     <script type="module" src="index.js" defer></script>
 </head>
 <body>
-    <div id="bunnyBurrow">
-        <header id="headerSection">
+    
+    <div id="global-loader">Loading...</div>
+
+    <div id="bunnyBurrow" class="content-wrapper">
+        
+        <header id="headerSection" class="wiggly-style">
             <h1>Welcome to my DOMAIN!</h1>
-            <img id="profilePic" src="assets/Mouth Open.png" alt="Eden the Bunny Lord">
+            <img id="profilePic" src="assets/Mouth Open.png" alt="Eden the Bunny Lord" loading="eager">
+            
             <div class="header-text">
-                <p1 style="margin: 0;">Eden Miles</p1>
-                <p2 style="margin: 0;">She/Her</p2>
+                <p style="margin: 0; font-weight: bold; font-size: 1.2rem;">Eden Miles</p>
+                <p style="margin: 0;">She/Her</p>
                 <p class="placeholder-text">Web Developer and Computing Student</p>
             </div>
         </header>
 
         <main id="mainGrid">
-            <section id="linksContainer" class="wiggly-section">
+            
+            <section id="linksContainer" class="wiggly-section wiggly-style">
                 <p class="placeholder-text">✦ My Links ✦</p>
                 <p>• <a href="https://github.com/TheRedPipin" target="_blank">My GitHub</a> Lots of random projects!</p>
-                <p>• <a href="https://instagram.com/estrogensteroid/" target="_blank">My Instagram</a> Photo's of life :D</p>
+                <p>• <a href="https://instagram.com/estrogensteroid/" target="_blank">My Instagram</a> Photos of life :D</p>
                 <p>• More links coming soon... (probably)</p>
             </section>
 
-            <section id="galleryContainer" class="wiggly-section">
+            <section id="galleryContainer" class="wiggly-section wiggly-style">
                 <p class="placeholder-text">! Royal Gallery !</p>
                 <div id="galleryGrid">
-                    <p style="opacity: 0.6; grid-column: 1 / -1;">Hopping in the fluff... 🐇</p>
+                    <img src="https://placehold.co/400x400/f5e6d3/5d4037?text=Bunny+1" alt="Bunny 1">
+                    <img src="https://placehold.co/400x400/f5e6d3/5d4037?text=Bunny+2" alt="Bunny 2">
+                    <img src="https://placehold.co/400x400/f5e6d3/5d4037?text=Bunny+3" alt="Bunny 3">
+                    <img src="https://placehold.co/400x400/f5e6d3/5d4037?text=Bunny+4" alt="Bunny 4">
+                    <img src="https://placehold.co/400x400/f5e6d3/5d4037?text=Bunny+5" alt="Bunny 5">
+                    <img src="https://placehold.co/400x400/f5e6d3/5d4037?text=Bunny+6" alt="Bunny 6">
                 </div>
             </section>
 
-            <section id="aboutMeContainer" class="wiggly-section">
+            <section id="aboutMeContainer" class="wiggly-section wiggly-style">
                 <p class="placeholder-text">✿ About the Bunny Lord ✿</p>
                 <p>
                     Hello! I'm Eden, Web Developer and Bed potato. 
@@ -56,26 +72,38 @@
                     ✦ Programming tiny chaotic things that probably don't need to exist<br>
                     ✦ Reading (currently making my way through the dark tower)<br>
                     ✦ Hanging out with my awesome cat Broccoli!
+                </p> 
                 <p>Now enjoy the site and may your naps be uninterrupted</p>
             </section>
 
-            <section id="updateContainer" class="wiggly-section">
-                <p class="placeholder-text" style="opacity: 0.4;">Update log loading...</p>
+            <section id="updateContainer" class="wiggly-section wiggly-style">
             </section>
 
-            <section id="funFactsContainer" class="wiggly-section">
+            <section id="funFactsContainer" class="wiggly-section wiggly-style">
                 <p class="placeholder-text">Previous Professional Work</p>
-                <p>✿ <a href="https://thelatenightlibrary.co.uk/">Late Night Library</a> - A CIC made as a hub for Nuerodivergent and LGBTQ people seeking a safe, welcoming space.</p>
+                <p>✿ <a href="https://thelatenightlibrary.co.uk/">Late Night Library</a> - A CIC made as a hub for Neurodivergent and LGBTQ people seeking a safe, welcoming space.</p>
+                <p>✿ - More stuff in the future I'm sure!</p>
             </section>
 
-            <section id="interactiveContainer" class="wiggly-section">
+            <section id="papersContainer" class="wiggly-section wiggly-style">
+                <p class="placeholder-text">The Archives</p>
+                
+                <p>A list of all the papers I have personally written! (Its not a lot)</p>
+                <a href="papers/papers-list.html" class="wiggly-style" style="text-decoration: none; padding: 0.5rem; display: inline-block; background: var(--secondary-color); font-size: 1.1rem;">
+                    View All Papers ➔
+                </a>
+            </section>
+
+            <section id="interactiveContainer" class="wiggly-section wiggly-style">
                 <p class="placeholder-text">✧ !Post Office! ✧</p>
+                
                 <form id="postForm" action="https://formsubmit.co/edenmiles7@gmail.com" method="POST" target="_blank">
                     <input type="text" name="_honey" style="display: none;">
                     <input type="hidden" name="_captcha" value="false">
 
-                    <input type="text" name="name" placeholder="What's ya name :D" class="wiggly-section" maxlength="50">
-                    <input type="text" name="message" placeholder="Super cool message!!!!" class="wiggly-section" maxlength="150">
+                    <input type="text" name="name" placeholder="What's ya name :D" maxlength="50" required>
+                    <input type="text" name="message" placeholder="Super cool message!!!!" maxlength="150" required>
+                    
                     <button type="submit">Ship this splish off! 
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/>
@@ -83,7 +111,7 @@
                         </svg>
                     </button>
                 </form>
-                <!-- pA lil script to just reset the form data after submission -->
+
                 <script>
                     const form = document.getElementById("postForm");
                     form.addEventListener("submit", function(){
@@ -92,9 +120,73 @@
                         }, 1000)
                     })
                 </script>
-
             </section>
         </main>
-    </div>
+    </div> <footer id="siteFooter">
+        <div class="footer-container">
+            
+            <div class="footer-text">
+                <p>© 2026 Eden Miles.</p>
+                <p style="font-size: 0.9em; opacity: 0.8;">Made with caffeine and chaos.</p>
+            </div>
+
+            <div class="footer-socials">
+                
+                <a href="https://github.com/TheRedPipin" target="_blank" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+
+                <a href="https://instagram.com/estrogensteroid/" target="_blank" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+
+                <a href="mailto:edenmiles7@gmail.com" aria-label="Email Me">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const imageUrls = [
+            'assets/squiggleBorder.png',
+            'assets/squiggleBorder2.png',
+            'assets/squiggleBorder3.png',
+            'assets/squiggleBorder4.png'
+        ];
+        
+        const loadImage = (src) => {
+            return new Promise((resolve, reject) => {
+                const img = new Image();
+                img.src = src;
+                img.onload = resolve;
+                img.onerror = resolve;
+            });
+        };
+
+        document.body.classList.add('is-loading');
+
+        Promise.all(imageUrls.map(loadImage))
+            .then(() => {
+                console.log('All border images loaded!');          
+                document.body.classList.remove('is-loading');
+                
+                const loader = document.getElementById('global-loader');
+                if(loader) {
+                    loader.style.transition = 'opacity 0.5s';
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.style.display = 'none', 500);
+                }
+            });
+    </script>
 </body>
 </html>
