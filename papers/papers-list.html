@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Paper Burrow</title>
-    <link rel="preload" as="image" href="assets/squiggleBorder.png">
-    <link rel="preload" as="image" href="assets/squiggleBorder2.png">
-    <link rel="preload" as="image" href="assets/squiggleBorder3.png">
-    <link rel="preload" as="image" href="assets/squiggleBorder4.png">
+    <link rel="preload" as="image" href="../assets/squiggleBorder.png">
+    <link rel="preload" as="image" href="../assets/squiggleBorder2.png">
+    <link rel="preload" as="image" href="../assets/squiggleBorder3.png">
+    <link rel="preload" as="image" href="../assets/squiggleBorder4.png">
     <link rel="stylesheet" href="../index.css">
     <link rel="icon" type="image/x-icon" href="assets/pop-cat-full.ico">
 </head>
 <body>
+    <div id="global-loader">Loading...</div>
     <div class="content-wrapper">
         <header id="headerSection" class="wiggly-style" style="margin-top: 2rem;">
             <h1>The Library</h1>
@@ -34,5 +35,37 @@
             </div>
         </main>
     </div>
+    <script>
+        const imageUrls = [
+            'assets/squiggleBorder.png',
+            'assets/squiggleBorder2.png',
+            'assets/squiggleBorder3.png',
+            'assets/squiggleBorder4.png'
+        ];
+        
+        const loadImage = (src) => {
+            return new Promise((resolve, reject) => {
+                const img = new Image();
+                img.src = src;
+                img.onload = resolve;
+                img.onerror = resolve;
+            });
+        };
+
+        document.body.classList.add('is-loading');
+
+        Promise.all(imageUrls.map(loadImage))
+            .then(() => {
+                console.log('All border images loaded!');          
+                document.body.classList.remove('is-loading');
+                
+                const loader = document.getElementById('global-loader');
+                if(loader) {
+                    loader.style.transition = 'opacity 0.5s';
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.style.display = 'none', 500);
+                }
+            });
+    </script>
 </body>
 </html>
