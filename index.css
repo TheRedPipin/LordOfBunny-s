@@ -33,10 +33,11 @@ body {
 }
 
 .content-wrapper {
-  width: 100%;
+  width: 75%;
   padding: 0.8rem;
   display: flex;
   flex-direction: column;
+  justify-self: center;
   gap: 1rem;
   flex: 1;
 }
@@ -189,6 +190,16 @@ form {
   z-index: 10;
 }
 
+#papersContainer a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.6rem;
+  border: 4px solid var(--primary-color);
+  border-radius: 8px;
+  width: 50%;
+  align-self: center;
+}
 
 .update-box {
   border: 6px solid transparent;
@@ -221,7 +232,6 @@ form {
   margin-top: 1.2rem;
   padding: 0.8rem;
   border-top: var(--border-width) solid transparent;
-  border-bottom: var(--border-width) solid transparent;
   border-image: url('assets/squiggleBorder.png') 1000 stretch;
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(2px);
@@ -238,15 +248,6 @@ form {
   gap: 0.6rem;
 }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
 
 .footer-socials { display: flex; gap: 1rem; }
 .footer-socials a { color: var(--accent-dark); transition: transform 0.2s ease; }
