@@ -354,13 +354,3 @@ form {
     text-align: center;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  *, .wiggly-style, #headerSection, .wiggly-section, .update-box, #siteFooter {
-    animation: none !important;
-    transition: none !important;
-    border: 8px solid #d4a373; 
-    border-image: none;
-    border-radius: 8px; 
-  }
-}
